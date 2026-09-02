@@ -9,3 +9,9 @@ Route::get('/', function () {
 Route::get('/sapa', function() {
     return 'Hello World!';
 });
+
+Route::get('/home', function() {
+    $nama = 'Ambi';
+
+    return view('home', compact('nama'));
+});
