@@ -10,6 +10,10 @@ Route::get('/sapa', function() {
     return 'Hello World!';
 });
 
+Route::get('/profile', function() {
+    return view('profile');
+});
+
 Route::get('/home', function() {
     $nama = 'Ambi';
 
